@@ -19,7 +19,6 @@ public class CouponController {
 
     @GetMapping("/{couponId}")
     public Optional<Coupon> getCouponById(@PathVariable Long couponId) {
-        System.out.println("In Get Coupon" + new Date() + "couponId " + couponId);
         return couponService.getCoupon(couponId);
     }
 
